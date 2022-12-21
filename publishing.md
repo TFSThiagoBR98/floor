@@ -2,50 +2,50 @@
 
 This document describes step-by-step how to release a new version of the library to pub.
 
+First install melos via command:
+
+```sh
+dart pub global activate melos
+```
+
+After you need to bootstrap in order update local dependencies:
+
+```sh
+melos bootstrap
+```
+
 1. **floor_annotation**
     1. Update CHANGELOG
     1. Update version
-    1. Update dependencies
-    1. `dart pub get`
+    2. Update dependencies
     
-1. **floor**
+2. **floor**
     1. Update CHANGELOG
-    1. Update README with updated library versions
-    1. Update version
-    1. Update dependencies
-    1. `flutter packages get`
+    2. Update README with updated library versions
+    3. Update version
+    4. Update dependencies
     
-1. **floor_generator**
+3. **floor_generator**
     1. Update CHANGELOG
-    1. Update version
-    1. Update dependencies
-    1. `dart pub get`
+    2. Update version
+    3. Update dependencies
 
-1. Check if all dependencies can be resolved and project runs as expected
+4. Run `melos bootstrap` again to get all dependencies
 
-1. **floor_annotation** 
-    1. `dart pub publish`
-    
-1. **floor_generator**
-    1. Change path of **floor_annotation** to point to pub hosted package
-    1. `dart pub publish`
-    1. Change path of **floor_annotation** to point to local package    
+4. Check if all dependencies can be resolved and project runs as expected
 
-1. **floor**
-    1. Change path of **floor_annotation** to point to pub hosted package
-    1. Change path of **floor_generator** to point to pub hosted package
-    1. `dart pub publish`
-    1. Change path of **floor_annotation** to point to local package
-    1. Change path of **floor_generator** to point to local package
+5. Validate if everything is OK, by running `melos publish --dry-run`
 
-1. Update top-level README with updated library versions
+6. To publish all packages run `melos publish --no-dry-run`
 
-1. Update docs/getting-started.md with updated library versions
+7. Update top-level README with updated library versions
 
-1. Update docs/changelog.md
+8. Update docs/getting-started.md with updated library versions
+
+9. Update docs/changelog.md
   	
-1. Create pull request with changes
+10. Create pull request with changes
 
-1. Merge changes into develop branch
+11. Merge changes into develop branch
 
-1. Create GitHub release
+12. Create GitHub release

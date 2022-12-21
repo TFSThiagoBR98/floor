@@ -1,0 +1,19 @@
+name: floor
+
+packages:
+  - packages/**
+  - example
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  build:
+    exec: flutter pub run build_runner build --delete-conflicting-outputs
+    select-package:
+      depends-on: build_runner
+  format:
+    exec: flutter format
+  analyze:
+    exec: flutter analyze --fatal-infos --fatal-warnings

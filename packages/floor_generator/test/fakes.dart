@@ -40,8 +40,7 @@ class FakeClassElement implements ClassElement {
   List<FieldElement> get fields => throw UnimplementedError();
 
   @override
-  String getDisplayString(
-      {required bool withNullability, bool multiline = false}) {
+  String getDisplayString({required bool withNullability, bool multiline = false}) {
     throw UnimplementedError();
   }
 
@@ -136,9 +135,7 @@ class FakeClassElement implements ClassElement {
   int get id => throw UnimplementedError();
 
   @override
-  InterfaceType instantiate(
-      {required List<DartType> typeArguments,
-      required NullabilitySuffix nullabilitySuffix}) {
+  InterfaceType instantiate({required List<DartType> typeArguments, required NullabilitySuffix nullabilitySuffix}) {
     throw UnimplementedError();
   }
 
@@ -187,38 +184,32 @@ class FakeClassElement implements ClassElement {
   ElementLocation? get location => throw UnimplementedError();
 
   @override
-  MethodElement? lookUpConcreteMethod(
-      String methodName, LibraryElement library) {
+  MethodElement? lookUpConcreteMethod(String methodName, LibraryElement library) {
     throw UnimplementedError();
   }
 
   @override
-  PropertyAccessorElement? lookUpGetter(
-      String getterName, LibraryElement library) {
+  PropertyAccessorElement? lookUpGetter(String getterName, LibraryElement library) {
     throw UnimplementedError();
   }
 
   @override
-  PropertyAccessorElement? lookUpInheritedConcreteGetter(
-      String getterName, LibraryElement library) {
+  PropertyAccessorElement? lookUpInheritedConcreteGetter(String getterName, LibraryElement library) {
     throw UnimplementedError();
   }
 
   @override
-  MethodElement? lookUpInheritedConcreteMethod(
-      String methodName, LibraryElement library) {
+  MethodElement? lookUpInheritedConcreteMethod(String methodName, LibraryElement library) {
     throw UnimplementedError();
   }
 
   @override
-  PropertyAccessorElement? lookUpInheritedConcreteSetter(
-      String setterName, LibraryElement library) {
+  PropertyAccessorElement? lookUpInheritedConcreteSetter(String setterName, LibraryElement library) {
     throw UnimplementedError();
   }
 
   @override
-  MethodElement? lookUpInheritedMethod(
-      String methodName, LibraryElement library) {
+  MethodElement? lookUpInheritedMethod(String methodName, LibraryElement library) {
     throw UnimplementedError();
   }
 
@@ -228,8 +219,7 @@ class FakeClassElement implements ClassElement {
   }
 
   @override
-  PropertyAccessorElement? lookUpSetter(
-      String setterName, LibraryElement library) {
+  PropertyAccessorElement? lookUpSetter(String setterName, LibraryElement library) {
     throw UnimplementedError();
   }
 
@@ -351,8 +341,7 @@ class FakeFieldElement implements FieldElement {
   Element get enclosingElement => throw UnimplementedError();
 
   @override
-  String getDisplayString(
-      {required bool withNullability, bool multiline = false}) {
+  String getDisplayString({required bool withNullability, bool multiline = false}) {
     throw UnimplementedError();
   }
 
@@ -547,6 +536,10 @@ class FakeFieldElement implements FieldElement {
   @override
   // TODO: implement children
   List<Element> get children => throw UnimplementedError();
+
+  @override
+  // TODO: implement isPromotable
+  bool get isPromotable => throw UnimplementedError();
 }
 
 class FakeDartObject implements DartObject {

@@ -1,5 +1,5 @@
 # Miscellaneous
-floor/**/*.g.dart
+packages/floor/**/*.g.dart
 *.class
 *.log
 *.pyc
@@ -29,6 +29,11 @@ floor/**/*.g.dart
 .pub/
 build/
 .flutter-plugins-dependencies
+
+# Flutter Version Manager
+.fvm/
+
+**/pubspec_overrides.yaml
 
 # Android related
 **/android/**/gradle-wrapper.jar

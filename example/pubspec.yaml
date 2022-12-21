@@ -10,15 +10,13 @@ environment:
   sdk: '>=2.17.0 <3.0.0'
 
 dependencies:
-  floor:
-    path: ../floor/
+  floor: ^1.4.0
   flutter:
     sdk: flutter
 
 dev_dependencies:
   analyzer: ^5.0.0
   build_runner: ^2.2.1
-  floor_generator:
-    path: ../floor_generator/
+  floor_generator: ^1.4.0
   flutter_test:
     sdk: flutter
